@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base target="_top">
+  <meta charset="UTF-8">
+  <title>Linh Linh</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <ul id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#Me">Me</a></li>
+                <li><a href="https://script.google.com/macros/s/AKfycbykVYxDb8woQfW_2JIj2JGlAwwjuFUBIJeJu0Omkfih66dySqndZ2gcgynxKgmt_QOC/exec">Work</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li>
+                    <a href="#">More
+                        <i class="nav-more-arrow fa-solid fa-caret-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="https://script.google.com/macros/s/AKfycbykVYxDb8woQfW_2JIj2JGlAwwjuFUBIJeJu0Omkfih66dySqndZ2gcgynxKgmt_QOC/exec">Projects</a></li>
+                        <li><a href="https://script.google.com/macros/s/AKfycbykVYxDb8woQfW_2JIj2JGlAwwjuFUBIJeJu0Omkfih66dySqndZ2gcgynxKgmt_QOC/exec">Certifications</a></li>
+                        <li><a href="https://script.google.com/macros/s/AKfycbykVYxDb8woQfW_2JIj2JGlAwwjuFUBIJeJu0Omkfih66dySqndZ2gcgynxKgmt_QOC/exec">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="search-btn">
+                <i class="search-btn fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div id="slider">
+                <div class="MySlide display_1">
+                    <div class="brightness_cover">
+                        <div class="text_content">
+                            <h3 class="display_title">Xinh</h3>
+                            <p class="display_description">xinh xinh xinh xinh xinh</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="MySlide display_2">
+                    <div class="brightness_cover">
+                        <div class="text_content">
+                            <h3 class="display_title">Mục tiêu rõ ràng </h3>
+                            <p class="display_description">Mày biết mày muốn gì mà</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="MySlide display_3">
+                    <div class="brightness_cover">
+                        <div class="text_content">
+                            <h3 class="display_title">As you wish</h3>
+                            <p class="display_description">Thổi thổi thổi thổi thổi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="MySlide display_4">
+                    <div class="brightness_cover">
+                        <div class="text_content">
+                            <h3 class="display_title">Vui lên</h3>
+                            <p class="display_description">Đấy. Vui như này này</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div id="content">
+            <div id="Me" class="content_section sec_1">
+                <h1 class="title"> Linh Linh</h1>     
+                <p class="sub_title">Độc lập-Tự do-Hạnh phúc</p>
+                <p class="message">
+                    Ờ tao cũng không biết phải nói gì :)). Ờ thì học được vài cái hay ho nên thực hành làm ngay cái này biết đâu mày thấy vui. Tao không bàn giải pháp nữa vì mày cũng thấy hết rồi. Đừng rối quá. Mày thấy rồi. Nghĩ rồi thì quyết thôi. Hehe. Xin lỗi :'). Tao cũng không biết làm gì hơn nữa để giúp mày ngoài động viên cả. Giúp được gì hay muốn được nghe thì nói nhé. Hehe. Ô mà nhìn được không? Trông cũng chuyên nghiệp mà. Hehe.(sau này đoạn này sửa thành cái gì đấy mày muốn nhé)
+                </p>
+            </div>
+            <div id="Contact" class="content_section sec_2">
+                <h1 class="title"> Contact</h1>     
+                <p class="sub_title">Want me to write something? Drop a line</p>
+            </div>
+        </div>
+        <div id="footer">
+
+        </div>
+        <script src="https://kit.fontawesome.com/8a038be4d0.js" crossorigin="anonymous"></script>
+        <script>
+            var MyIndex=0;
+            carousel();
+            function carousel(){
+                var x=document.getElementsByClassName("MySlide");
+                for(i=0;i<x.length;i++){
+                    x[i].style.display="none";
+                }
+                x[MyIndex].style.display="block";
+                MyIndex++;
+                if(MyIndex>=x.length){MyIndex=0;}
+                setTimeout(carousel,4000);
+            }
+        </script>
+</body>
+</html>
