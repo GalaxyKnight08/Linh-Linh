@@ -124,7 +124,7 @@ html{
     text-align: center;
 }
 #slider .MySlide .brightness_cover .text_content p{
-     font-size: 2vw;
+     font-size: 30px;
      padding-top: 12px;
      padding-bottom: 12px;
      /* position: absolute; */
@@ -133,7 +133,7 @@ html{
 #slider .MySlide .brightness_cover .text_content h3{
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 2vw;
+    font-size: 20px;
     height: 50%;
     /* size: landscape; */
     /* text-align: center; */
