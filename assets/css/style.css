@@ -99,16 +99,16 @@ html{
    /* filter: brightness(40%); */
 }
 .display_1{
-    background-image: url('assets/img/Linh_Linh_1.jpg');
+    background-image: url('https://raw.githubusercontent.com/GalaxyKnight08/Linh-Linh/main/assets/img/Linh_Linh_1.jpg');
 }
 .display_2{
-    background-image: url('assets/img/Linh_Linh_2.jpg');
+    background-image: url('https://raw.githubusercontent.com/GalaxyKnight08/Linh-Linh/main/assets/img/Linh_Linh_2.jpg');
 }
 .display_3{
-    background-image: url('assets/img/Linh_Linh_3.jpg');
+    background-image: url('https://raw.githubusercontent.com/GalaxyKnight08/Linh-Linh/main/assets/img/Linh_Linh_3.jpg');
 }
 .display_4{
-    background-image: url('assets/img/Linh_Linh_4.jpg');
+    background-image: url('https: //raw .githubusercontent .com/GalaxyKnight 8px /Linh Linh/main/assets/img/Linh_Linh_4.jpg');
 }
 .MySlide .brightness_cover{
     background-color: rgba(0,0,0,0.5);
