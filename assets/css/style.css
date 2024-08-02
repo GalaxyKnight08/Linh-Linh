@@ -99,16 +99,16 @@ html{
    /* filter: brightness(40%); */
 }
 .display_1{
-    background-image: url('/assets/img/Linh Linh 1.jpg');
+    background-image: url('assets/img/Linh Linh 1.jpg');
 }
 .display_2{
-    background-image: url('/assets/img/Linh Linh 2.jpg');
+    background-image: url('assets/img/Linh Linh 2.jpg');
 }
 .display_3{
-    background-image: url('/assets/img/Linh Linh 3.jpg');
+    background-image: url('assets/img/Linh Linh 3.jpg');
 }
 .display_4{
-    background-image: url('/assets/img/Linh Linh 4.jpg');
+    background-image: url('assets/img/Linh Linh 4.jpg');
 }
 .MySlide .brightness_cover{
     background-color: rgba(0,0,0,0.5);
