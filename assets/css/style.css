@@ -99,16 +99,16 @@ html{
    /* filter: brightness(40%); */
 }
 .display_1{
-    background-image: url('https://raw.githubusercontent.com/GalaxyKnight08/Linh-Linh/main/assets/img/Linh_Linh_1.jpg');
+    background-image: url('../img/Linh_Linh_1.jpg');
 }
 .display_2{
-    background-image: url('https://raw.githubusercontent.com/GalaxyKnight08/Linh-Linh/main/assets/img/Linh_Linh_2.jpg');
+    background-image: url('../img/Linh_Linh_2.jpg');
 }
 .display_3{
-    background-image: url('https://raw.githubusercontent.com/GalaxyKnight08/Linh-Linh/main/assets/img/Linh_Linh_3.jpg');
+    background-image: url('../img/Linh_Linh_3.jpg');
 }
 .display_4{
-    background-image: url('https://raw.githubusercontent.com/GalaxyKnight08/Linh-Linh/main/assets/img/Linh_Linh_4.jpg');
+    background-image: url('../img/Linh_Linh_4.jpg');
 }
 .MySlide .brightness_cover{
     background-color: rgba(0,0,0,0.5);
@@ -246,6 +246,7 @@ html{
 }
 #content .sec_3 .contact_box_cell .information .info i{
     font-size: 16px;
+    width: 28px;
 }
 #content .sec_3 .contact_box_cell .message li input{
     font: inherit;
@@ -309,4 +310,9 @@ html{
 .sunset{
     width: 100%;
     display: block;
+}
+@media screen and (max-width: 768px) {
+    .responsive-hide {
+        display: none;
+    }
 }
