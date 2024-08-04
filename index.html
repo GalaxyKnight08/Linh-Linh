@@ -8,14 +8,13 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <div id="header">
+    <div class="full" id="header">
         <ul id="nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#Me">Me</a></li>
-            <li><a target="_top" href="#">Work</a></li>
-            <li><a href="#Contact">Contact</a></li>
-            <li>
-                <a href="#">More <i class="nav-more-arrow fa-solid fa-caret-down"></i></a>
+            <li class="layer_1"><a href="#">Home</a></li>
+            <li class="layer_1"><a href="#Me">Me</a></li>
+            <li class="layer_1"><a target="_top" href="#">Work</a></li>
+            <li class="layer_1"><a href="#Contact">Contact</a></li>
+            <li class="layer_1"><a href="#">More <i class="nav-more-arrow fa-solid fa-caret-down"></i></a>
                 <ul class="subnav">
                     <li><a target="_top"  href="#">Projects</a></li>
                     <li><a target="_top"  href="#">Certifications</a></li>
@@ -27,37 +26,92 @@
             <i class="search-btn fa-solid fa-magnifying-glass"></i>
         </div>
     </div>
-        <div id="slider"> 
-            <div class="MySlide display_1">
-                <div class="brightness_cover">
-                    <div class="text_content">
-                        <h1 class="display_title">Xinh</h1>
-                        <p class="display_description">xinh xinh xinh xinh xinh</p>
-                    </div>
+    <div class="hide_1_nav" id="header">
+        <ul id="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#Me">Me</a></li>
+            <li><a target="_top" href="#">Work</a></li>
+            <li>
+                <a href="#">More <i class="nav-more-arrow fa-solid fa-caret-down"></i></a>
+                <ul class="subnav">
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a target="_top"  href="#">Projects</a></li>
+                    <li><a target="_top"  href="#">Certifications</a></li>
+                    <li><a target="_top"  href="#">Media</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="search-btn">
+            <i class="search-btn fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <div class="hide_2_nav" id="header">
+        <ul id="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#Me">Me</a></li>
+            <li><a href="#">More <i class="nav-more-arrow fa-solid fa-caret-down"></i></a>
+                <ul class="subnav">
+                    <li><a target="_top" href="#">Work</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a target="_top"  href="#">Projects</a></li>
+                    <li><a target="_top"  href="#">Certifications</a></li>
+                    <li><a target="_top"  href="#">Media</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="search-btn">
+            <i class="search-btn fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <div class="hide_3_nav" id="header">
+        <ul id="nav">
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">More <i class="nav-more-arrow fa-solid fa-caret-down"></i></a>
+                <ul class="subnav">
+                    <li><a href="#Me">Me</a></li>
+                    <li><a target="_top" href="#">Work</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a target="_top"  href="#">Projects</a></li>
+                    <li><a target="_top"  href="#">Certifications</a></li>
+                    <li><a target="_top"  href="#">Media</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="search-btn">
+            <i class="search-btn fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <div id="slider"> 
+        <div class="MySlide display_1">
+            <div class="brightness_cover">
+                <div class="text_content">
+                    <h1 class="display_title">Xinh</h1>
+                    <p class="display_description">xinh xinh xinh xinh xinh</p>
                 </div>
             </div>
-            <div class="MySlide display_2">
-                <div class="brightness_cover">
-                    <div class="text_content">
-                        <h1 class="display_title">Mục tiêu rõ ràng </h1>
-                        <p class="display_description">Mày biết mày muốn gì mà</p>
-                    </div>
+        </div>
+        <div class="MySlide display_2">
+            <div class="brightness_cover">
+                <div class="text_content">
+                    <h1 class="display_title">Mục tiêu rõ ràng </h1>
+                    <p class="display_description">Mày biết mày muốn gì mà</p>
                 </div>
             </div>
-            <div class="MySlide display_3">
-                <div class="brightness_cover">
-                    <div class="text_content">
-                        <h1 class="display_title">As you wish</h1>
-                        <p class="display_description">Thổi thổi thổi thổi thổi</p>
-                    </div>
+        </div>
+        <div class="MySlide display_3">
+            <div class="brightness_cover">
+                <div class="text_content">
+                    <h1 class="display_title">As you wish</h1>
+                    <p class="display_description">Thổi thổi thổi thổi thổi</p>
                 </div>
             </div>
-            <div class="MySlide display_4">
-                <div class="brightness_cover">
-                    <div class="text_content">
-                        <h1 class="display_title">Vui lên</h1>
-                        <p class="display_description">Đấy. Vui như này này</p>
-                    </div>
+        </div>
+        <div class="MySlide display_4">
+            <div class="brightness_cover">
+                <div class="text_content">
+                    <h1 class="display_title">Vui lên</h1>
+                    <p class="display_description">Đấy. Vui như này này</p>
                 </div>
             </div>
         </div>
@@ -110,9 +164,17 @@
                         modalImg.src = this.src;
                     });
                 });
-                closeBtn.onclick = function(){
+                function closeModal(){
                     modal.style.display="none";
                 }
+                closeBtn.addEventListener("click", closeModal);
+
+                // Đảm bảo rằng modal chỉ đóng khi nhấp vào vùng ngoài hình ảnh
+                modal.addEventListener("click", function(event) {
+                    if (event.target === modal) {
+                        closeModal();
+                    }
+                })
             </script>
             <div id="Contact" class="content_section sec_3">
                 <h1 class="title"> Contact</h1>     
@@ -145,7 +207,7 @@
         </div>
         <script>
             textarea = document.querySelector(".Guest_message");
-            textarea.addEventListener('input', autoResize, false);
+            textarea.addEventListener('input', autoResize);
      
             function autoResize() {
                 this.style.height = 'auto';
@@ -166,7 +228,7 @@
                 if(MyIndex>=x.length){MyIndex=0;}
                 setTimeout(carousel,4000);
             }
-
+            // Function to handle the menu responsiveness
         </script>
-</body>
+    </body>
 </html>
