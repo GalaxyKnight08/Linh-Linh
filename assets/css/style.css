@@ -14,6 +14,7 @@ html{
     height: 46px;
     background-color: black;
     z-index: 1;
+    display: none;
 }
 #nav > li{
     display: inline-block;
@@ -311,8 +312,59 @@ html{
     width: 100%;
     display: block;
 }
-@media screen and (max-width: 768px) {
-    .responsive-hide {
+@media (min-width: 568px) {
+    #header.full {
+        display: block;
+    }
+    #header.hide_1_nav {
         display: none;
+    }
+    #header.hide_2_nav {
+        display: none;
+    }
+    #header.hide_3_nav {
+        display: none;
+    }
+}
+@media (max-width: 567px) {
+    #header.full {
+        display: none;
+    }
+    #header.hide_1_nav {
+        display: block;
+    }
+    #header.hide_2_nav {
+        display: none;
+    }
+    #header.hide_3_nav {
+        display: none;
+    }
+}
+@media (max-width: 471px) {
+    #header.full {
+        display: none;
+    }
+    #header.hide_1_nav {
+        display: none;
+    }
+    #header.hide_2_nav {
+        display: block;
+    }
+    #header.hide_3_nav {
+        display: none;
+    }
+}
+@media (max-width: 375px) {
+    #header.full {
+        display: none;
+    }
+    #header.hide_1_nav {
+        display: none;
+    }
+    #header.hide_2_nav {
+        display: none;
+    }
+    #header.hide_3_nav {
+        display: block;
     }
 }
