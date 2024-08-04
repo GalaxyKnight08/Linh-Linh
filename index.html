@@ -10,15 +10,17 @@
 <body>
     <div class="full" id="header">
         <ul id="nav">
-            <li class="layer_1"><a href="#">Home</a></li>
-            <li class="layer_1"><a href="#Me">Me</a></li>
-            <li class="layer_1"><a target="_top" href="#">Work</a></li>
-            <li class="layer_1"><a href="#Contact">Contact</a></li>
-            <li class="layer_1"><a href="#">More <i class="nav-more-arrow fa-solid fa-caret-down"></i></a>
+            <li><a href="#">Home</a></li>
+            <li class="responsive-hide layer_1"><a href="#Me">Me</a></li>
+            <li class="responsive-hide layer_1"><a target="_top" href="#">Work</a></li>
+            <li class="responsive-hide layer_1"><a href="#Contact">Contact</a></li>
+            <li>
+                <a href="#">More <i class="nav-more-arrow fa-solid fa-caret-down"></i></a>
                 <ul class="subnav">
-                    <li><a target="_top"  href="#">Projects</a></li>
-                    <li><a target="_top"  href="#">Certifications</a></li>
-                    <li><a target="_top"  href="#">Media</a></li>
+                    <li><a target="_top" href="#">Projects</a></li>
+                    <li><a target="_top" href="#">Certifications</a></li>
+                    <li><a target="_top" href="#">Media</a></li>
+                    <!-- This is where the hidden items will go -->
                 </ul>
             </li>
         </ul>
@@ -228,7 +230,49 @@
                 if(MyIndex>=x.length){MyIndex=0;}
                 setTimeout(carousel,4000);
             }
-            // Function to handle the menu responsiveness
         </script>
+        <!-- <script>
+            // Function to handle the menu responsiveness
+            const nav = document.getElementById('nav');
+            const subnav = nav.querySelector('.subnav');
+    
+            function HideNav() {
+                const listItems = nav.querySelectorAll('.layer_1');
+                console.log(listItems);
+                if (listItems.length >= 1) {
+                    const secondLastItem = listItems[listItems.length - 1];
+                    secondLastItem.classList.add('layer_2');
+                    secondLastItem.classList.remove('layer_1');
+                    subnav.insertBefore(secondLastItem, subnav.firstChild);
+                }
+            }
+    
+            function resetNav() {
+                const listItems = subnav.querySelectorAll('.layer_2');
+                console.log(listItems);
+                if (listItems.length >= 1) {
+                    const secondLastItem = listItems[listItems.length - 1];
+                    secondLastItem.classList.add('layer_1');
+                    secondLastItem.classList.remove('layer_2');
+                    nav.insertBefore(secondLastItem, nav.children[1]);
+                }
+            }
+    
+            function handleResize() {
+                const width = window.innerWidth;
+                const listItems_layer_1 = nav.querySelectorAll('.respnsive-hide');
+                if (width <= 567 && width > 471) {
+                    HideNav();
+                }
+                else if (width <= 471 && width >375) {
+                    HideNav();
+                }
+                else if (width <= 375) {
+                    HideNav();
+                }
+            }
+    
+            window.addEventListener('resize', handleResize);
+        </script> -->
     </body>
 </html>
