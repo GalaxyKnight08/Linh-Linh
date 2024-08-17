@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Linh Linh</title>
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="full" id="header">
@@ -19,7 +22,7 @@
                 <ul class="subnav">
                     <li><a target="_top" href="#">Projects</a></li>
                     <li><a target="_top" href="#">Certifications</a></li>
-                    <li><a target="_top" href="#">Media</a></li>
+                    <li><a target="_top" href="#footer">Media</a></li>
                     <!-- This is where the hidden items will go -->
                 </ul>
             </li>
@@ -39,7 +42,7 @@
                     <li><a href="#Contact">Contact</a></li>
                     <li><a target="_top"  href="#">Projects</a></li>
                     <li><a target="_top"  href="#">Certifications</a></li>
-                    <li><a target="_top"  href="#">Media</a></li>
+                    <li><a target="_top"  href="#footer">Media</a></li>
                 </ul>
             </li>
         </ul>
@@ -57,7 +60,7 @@
                     <li><a href="#Contact">Contact</a></li>
                     <li><a target="_top"  href="#">Projects</a></li>
                     <li><a target="_top"  href="#">Certifications</a></li>
-                    <li><a target="_top"  href="#">Media</a></li>
+                    <li><a target="_top"  href="#footer">Media</a></li>
                 </ul>
             </li>
         </ul>
@@ -76,7 +79,7 @@
                     <li><a href="#Contact">Contact</a></li>
                     <li><a target="_top"  href="#">Projects</a></li>
                     <li><a target="_top"  href="#">Certifications</a></li>
-                    <li><a target="_top"  href="#">Media</a></li>
+                    <li><a target="_top"  href="#footer">Media</a></li>
                 </ul>
             </li>
         </ul>
@@ -88,7 +91,7 @@
         <div class="MySlide display_1">
             <div class="brightness_cover">
                 <div class="text_content">
-                    <h1 class="display_title">Xinh</h1>
+                    <h1 class="display_title">Date()</h1>
                     <p class="display_description">xinh xinh xinh xinh xinh</p>
                 </div>
             </div>
@@ -225,11 +228,30 @@
                 for(i=0;i<x.length;i++){
                     x[i].style.display="none";
                 }
+                var cur_date = new Date();
+                x[MyIndex].querySelector('.display_title').textContent = 
+                cur_date.getHours() + 
+                ':' + 
+                cur_date.getMinutes();
+                x[MyIndex].querySelector('.display_description').textContent = getFormattedDate();
                 x[MyIndex].style.display="block";
                 MyIndex++;
                 if(MyIndex>=x.length){MyIndex=0;}
                 setTimeout(carousel,4000);
             }
+            function getFormattedDate() {
+                var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+                var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+                var date = new Date();
+                var dayName = days[date.getDay()];
+                var day = date.getDate();
+                var monthName = months[date.getMonth()];
+                var year = date.getFullYear();
+
+                return `${dayName}, ${day} ${monthName} ${year}`;
+            }
+            //console.log(getFormattedDate()); // Ví dụ kết quả: 'Sat, 17 Aug 2024'
         </script>
         <!-- <script>
             // Function to handle the menu responsiveness
@@ -274,5 +296,6 @@
     
             window.addEventListener('resize', handleResize);
         </script> -->
+        <script src = "assets/js/backend.js"></script>
     </body>
 </html>
