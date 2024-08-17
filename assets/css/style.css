@@ -14,7 +14,7 @@ html{
     height: 46px;
     background-color: black;
     z-index: 1;
-    display: none;
+    /* display: none; */
 }
 #nav > li{
     display: inline-block;
@@ -121,12 +121,13 @@ html{
 }
 .MySlide .brightness_cover .text_content{
     color: white;
-    color: white;
     text-align: center;
-    padding-top: 76vh;
+    padding-top: 60vh;
+    font-family: "Edu VIC WA NT Beginner";
+    font-weight: 100;
 } 
 .MySlide .brightness_cover p{
-     /* font-size: 24px; */
+     font-size: 24px;
      padding-top: 12px;
      padding-bottom: 12px;
      /* position: absolute; */
@@ -135,7 +136,8 @@ html{
 .MySlide .brightness_cover  h1{
     padding-top: 10px;
     padding-bottom: 10px;
-    /* font-size: 36px; */
+    font-size: 92px;
+    font-weight: 100;
     /* height: 50%; */
     /* size: landscape; */
     /* text-align: center; */
