@@ -91,7 +91,7 @@
         <div class="MySlide display_1">
             <div class="brightness_cover">
                 <div class="text_content">
-                    <h1 class="display_title">Date()</h1>
+                    <h1 class="display_title">Xinh</h1>
                     <p class="display_description">xinh xinh xinh xinh xinh</p>
                 </div>
             </div>
@@ -230,9 +230,10 @@
                 }
                 var cur_date = new Date();
                 x[MyIndex].querySelector('.display_title').textContent = 
-                cur_date.getHours() + 
-                ':' + 
-                cur_date.getMinutes();
+                cur_date.toLocaleTimeString(undefined, {
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
                 x[MyIndex].querySelector('.display_description').textContent = getFormattedDate();
                 x[MyIndex].style.display="block";
                 MyIndex++;
